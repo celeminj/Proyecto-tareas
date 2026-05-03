@@ -1,0 +1,20 @@
+.dashboard-container{
+    background-color: #ececec;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid #2c2c2c;
+}
+
+.dashboard-cards{
+    display: flex;
+    padding: 3px;
+    align-items: center;
+    justify-content: space-between;
+}
+.dashboard-card{
+    background-color: #2c2c2c;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
