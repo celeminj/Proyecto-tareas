@@ -28,10 +28,10 @@ services:
     image: mysql:8
     restart: always
     environment:
-      MYSQL_DATABASE: db_pjc
-      MYSQL_ROOT_PASSWORD: mysql
-      MYSQL_USER: user
-      MYSQL_PASSWORD: mysql
+      MYSQL_DATABASE: ${MYSQL_DATABASE:-db_pjc}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-mysql}
+      MYSQL_USER: ${MYSQL_USER:-user}
+      MYSQL_PASSWORD: ${MYSQL_ROOT_PASSWORD:-mysql}
     ports:
       - "3307:3306"
     volumes:
